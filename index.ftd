@@ -1,1 +1,27 @@
--- ds.page: hello
+-- import: fpm
+/-- import: fifthtry.github.io/admonitions/assets
+-- import: fifthtry.github.io/typography as tf
+-- import: fifthtry.github.io/package-doc/doc as pd
+-- import: fifthtry.github.io/package-doc/code-block as cb
+-- import: icon
+
+
+
+
+
+-- ftd.column:
+id: code-wrap
+width: fill
+align: center
+spacing: 20
+padding-horizontal: 50
+padding-vertical: 20
+background-color: $fpm.color.main.background.base
+
+
+-- pd.package: Admonitions components
+name: fifthtry.github.io/admonitions
+
+The admonitions package(https://github.com/FifthTry/admonitions). Use `FTD` custom admonitions styles for your web pages.
+
+*Icons are used from `FTD` https://github.com/FifthTry/octicon package. To use `ftd` octicons refer: https://fifthtry.github.io/octicon/

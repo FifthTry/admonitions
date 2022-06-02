@@ -30,14 +30,11 @@ name: fifthtry.github.io/admonitions
 
 The admonitions package(fifthtry.github.io/admonitions). Use `FTD` custom admonitions styles for your web pages.
 
-*Icons are used from `FTD` `fifthtry.github.io/octicon` package. To use `ftd` octicons refer: fifthtry.github.io/octicon
+*Icons are used from `FTD` `fifthtry.github.io/octicon` package. To use `ftd` octicons refer: `fifthtry.github.io/octicon`
 
+How to use?
 
-
--- pd.component: How to call admonitions into your project?
-name: fifthtry.github.io/admonitions
-
-Add below lines into `FPM.ftd` file
+Add below lines into `FPM.ftd` file:
 
 
 -- cb.code:

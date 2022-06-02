@@ -6,7 +6,9 @@ zip: github.com/fifthtry/admonitions/archive/refs/heads/main.zip
 -- fpm.dependency: fifthtry.github.io/package-doc as pd
 -- fpm.dependency: fifthtry.github.io/typography as tf
 -- fpm.dependency: fifthtry.github.io/octicon as icon
+-- fpm.dependency: fifthtry.github.io/inter
 
 
 
 -- fpm.auto-import: icon
+-- fpm.auto-import: fifthtry.github.io/inter/assets as inter

@@ -926,6 +926,125 @@
       ]
     }
   },
+  "fifthtry.github.io/admonitions/#width@0,0,1,4": {
+    "value": "percent 45",
+    "dependencies": {
+      "$style$": [
+        {
+          "condition": null,
+          "dependency_type": "Variable",
+          "parameters": {
+            "width": {
+              "default": null,
+              "value": {
+                "important": false,
+                "reference": null,
+                "value": {
+                  "$node$": "0,0,5,3,1,0:output-container-external:0,0,5",
+                  "$variable$": "fifthtry.github.io/admonitions/admonition#is-mobile"
+                }
+              }
+            }
+          },
+          "remaining": null
+        }
+      ]
+    }
+  },
+  "fifthtry.github.io/admonitions/#width@0,1,4": {
+    "value": "percent 45",
+    "dependencies": {
+      "$style$": [
+        {
+          "condition": null,
+          "dependency_type": "Variable",
+          "parameters": {
+            "width": {
+              "default": null,
+              "value": {
+                "important": false,
+                "reference": null,
+                "value": {
+                  "$node$": "0,1,3,1,0:output-container-external:0,1",
+                  "$variable$": "fifthtry.github.io/admonitions/admonition#is-mobile"
+                }
+              }
+            }
+          },
+          "remaining": null
+        }
+      ]
+    }
+  },
+  "fifthtry.github.io/admonitions/admonition#is-mobile": {
+    "value": false,
+    "dependencies": {
+      "0,0,5,3,1,0:output-container-external:0,0,5": [
+        {
+          "condition": false,
+          "dependency_type": "Style",
+          "parameters": {
+            "width": {
+              "default": null,
+              "value": {
+                "important": false,
+                "reference": "fifthtry.github.io/admonitions/#width@0,0,1,4",
+                "value": "45%"
+              }
+            }
+          },
+          "remaining": null
+        },
+        {
+          "condition": true,
+          "dependency_type": "Style",
+          "parameters": {
+            "width": {
+              "default": null,
+              "value": {
+                "important": false,
+                "reference": null,
+                "value": "100%"
+              }
+            }
+          },
+          "remaining": null
+        }
+      ],
+      "0,1,3,1,0:output-container-external:0,1": [
+        {
+          "condition": false,
+          "dependency_type": "Style",
+          "parameters": {
+            "width": {
+              "default": null,
+              "value": {
+                "important": false,
+                "reference": "fifthtry.github.io/admonitions/#width@0,1,4",
+                "value": "45%"
+              }
+            }
+          },
+          "remaining": null
+        },
+        {
+          "condition": true,
+          "dependency_type": "Style",
+          "parameters": {
+            "width": {
+              "default": null,
+              "value": {
+                "important": false,
+                "reference": null,
+                "value": "100%"
+              }
+            }
+          },
+          "remaining": null
+        }
+      ]
+    }
+  },
   "fifthtry.github.io/package-doc/assets#files": {
     "value": {
       "LICENSE": {
@@ -2217,6 +2336,25 @@
     "value": "desktop",
     "dependencies": {
       "$value$": [
+        {
+          "condition": "mobile",
+          "dependency_type": "Variable",
+          "parameters": {
+            "fifthtry.github.io/admonitions/admonition#is-mobile": {
+              "default": {
+                "important": false,
+                "reference": null,
+                "value": false
+              },
+              "value": {
+                "important": false,
+                "reference": null,
+                "value": true
+              }
+            }
+          },
+          "remaining": null
+        },
         {
           "condition": "mobile",
           "dependency_type": "Variable",

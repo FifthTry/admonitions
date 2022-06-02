@@ -25,6 +25,10 @@ FPM Blank Package Template Repo</title>
       ]
     }
   },
+  "fpm#theme-color": {
+    "value": "#1F5E6B",
+    "dependencies": {}
+  },
   "ftd#dark-mode": {
     "value": false,
     "dependencies": {
@@ -37,7 +41,143 @@ FPM Blank Package Template Repo</title>
   },
   "ftd#device": {
     "value": "desktop",
-    "dependencies": {}
+    "dependencies": {
+      "$value$": [
+        {
+          "condition": "mobile",
+          "dependency_type": "Variable",
+          "parameters": {
+            "fifthtry.github.io/octicon#is-mobile": {
+              "default": {
+                "important": false,
+                "reference": null,
+                "value": false
+              },
+              "value": {
+                "important": false,
+                "reference": null,
+                "value": true
+              }
+            }
+          },
+          "remaining": null
+        },
+        {
+          "condition": "mobile",
+          "dependency_type": "Variable",
+          "parameters": {
+            "fifthtry.github.io/package-doc/dark-mode-switcher#is-mobile": {
+              "default": {
+                "important": false,
+                "reference": null,
+                "value": false
+              },
+              "value": {
+                "important": false,
+                "reference": null,
+                "value": true
+              }
+            }
+          },
+          "remaining": null
+        },
+        {
+          "condition": "mobile",
+          "dependency_type": "Variable",
+          "parameters": {
+            "fifthtry.github.io/package-doc/forest-theme#is-mobile": {
+              "default": {
+                "important": false,
+                "reference": null,
+                "value": false
+              },
+              "value": {
+                "important": false,
+                "reference": null,
+                "value": true
+              }
+            }
+          },
+          "remaining": null
+        },
+        {
+          "condition": "mobile",
+          "dependency_type": "Variable",
+          "parameters": {
+            "fifthtry.github.io/package-doc/header#is-mobile": {
+              "default": {
+                "important": false,
+                "reference": null,
+                "value": false
+              },
+              "value": {
+                "important": false,
+                "reference": null,
+                "value": true
+              }
+            }
+          },
+          "remaining": null
+        },
+        {
+          "condition": "mobile",
+          "dependency_type": "Variable",
+          "parameters": {
+            "fifthtry.github.io/package-doc/language-switcher#is-mobile": {
+              "default": {
+                "important": false,
+                "reference": null,
+                "value": false
+              },
+              "value": {
+                "important": false,
+                "reference": null,
+                "value": true
+              }
+            }
+          },
+          "remaining": null
+        },
+        {
+          "condition": "mobile",
+          "dependency_type": "Variable",
+          "parameters": {
+            "fifthtry.github.io/typography#is-mobile": {
+              "default": {
+                "important": false,
+                "reference": null,
+                "value": false
+              },
+              "value": {
+                "important": false,
+                "reference": null,
+                "value": true
+              }
+            }
+          },
+          "remaining": null
+        },
+        {
+          "condition": "mobile",
+          "dependency_type": "Variable",
+          "parameters": {
+            "icon#is-mobile": {
+              "default": {
+                "important": false,
+                "reference": null,
+                "value": false
+              },
+              "value": {
+                "important": false,
+                "reference": null,
+                "value": true
+              }
+            }
+          },
+          "remaining": null
+        }
+      ]
+    }
   },
   "ftd#follow-system-dark-mode": {
     "value": true,

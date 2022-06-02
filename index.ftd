@@ -37,7 +37,7 @@ The admonitions package(fifthtry.github.io/admonitions). Use `FTD` custom admoni
 -- pd.component: How to call admonitions into your project?
 name: fifthtry.github.io/admonitions
 
-Add below lines into `fpm.ftd` file
+Add below lines into `FPM.ftd` file
 
 
 -- cb.code:
@@ -51,10 +51,7 @@ lang: ftd
 
 
 
--- pd.output: Basic usage example - Import `cbox` into your `<ftd>.ftd` file
-
-
-\-- import: cbox
+-- pd.output: Basic usage example 
 
 
 \-- cbox.note: Noteworthy Heading

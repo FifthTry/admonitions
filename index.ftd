@@ -26,14 +26,14 @@ background-color: $fpm.color.main.background.base
 -- pd.package: Admonitions components
 name: fifthtry.github.io/admonitions
 
-The admonitions package(https://github.com/FifthTry/admonitions). Use `FTD` custom admonitions styles for your web pages.
+The admonitions package(fifthtry.github.io/admonitions). Use `FTD` custom admonitions styles for your web pages.
 
-*Icons are used from `FTD` https://github.com/FifthTry/octicon package. To use `ftd` octicons refer: https://fifthtry.github.io/octicon/
+*Icons are used from `FTD` `fifthtry.github.io/octicon` package. To use `ftd` octicons refer: fifthtry.github.io/octicon
 
 
 
 -- pd.component: How to call admonitions into your project?
-name: https://github.com/FifthTry/admonitions
+name: fifthtry.github.io/admonitions
 
 Add below lines into `fpm.ftd` file
 

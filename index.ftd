@@ -1,10 +1,14 @@
 -- import: fpm
-/-- import: fifthtry.github.io/admonitions/assets
+-- import: fifthtry.github.io/admonitions/assets
 -- import: fifthtry.github.io/typography as tf
 -- import: fifthtry.github.io/package-doc/doc as pd
 -- import: fifthtry.github.io/package-doc/code-block as cb
--- import: icon
-
+-- import: fifthtry.github.io/admonitions/admonition as cbox
+/-- import: icon
+/-- fpm.font-copy: Inter
+/-- fpm.font-code: Inter
+/-- fpm.font-display: Inter
+/-- fpm.font-copy: Inter
 
 
 
@@ -25,3 +29,87 @@ name: fifthtry.github.io/admonitions
 The admonitions package(https://github.com/FifthTry/admonitions). Use `FTD` custom admonitions styles for your web pages.
 
 *Icons are used from `FTD` https://github.com/FifthTry/octicon package. To use `ftd` octicons refer: https://fifthtry.github.io/octicon/
+
+
+
+-- pd.output: Basic usage example
+
+\-- cbox.note: Noteworthy Heading
+icon: icon.info:
+> color: $fpm.color.main.info.text
+width: percent 45
+
+Of all the things possible, this is what you came up with? I am disappointed in 
+your lack of ingenuity.
+
+-- cbox.note: Noteworthy Heading
+icon: icon.info:
+> color: $fpm.color.main.info.text
+width: percent 45
+
+Of all the things possible, this is what you came up with? I am disappointed in 
+your lack of ingenuity.
+
+
+-- container: code-wrap
+
+
+-- pd.output: Advanced usage example - add more components to note cbox
+
+
+\-- cbox.note: Noteworthy Heading
+icon: icon.info:
+> color: $fpm.color.main.info.text
+width: percent 45
+
+Of all the things possible, this is what you came up with? I am disappointed in 
+your lack of ingenuity.
+
+\--- cb.code:
+lang: ftd
+
+\--- fpm.color.main.info.base:
+light: rgba(15, 87, 96, 1)
+dark: rgba(15, 87, 96, 1)
+
+
+\--- tf.h1: This is heading
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+nostrud exercitation
+
+
+
+-- cbox.note: Noteworthy Heading
+icon: icon.info:
+> color: $fpm.color.main.info.text
+width: percent 45
+
+Of all the things possible, this is what you came up with? I am disappointed in 
+your lack of ingenuity.
+
+--- cb.code:
+lang: ftd
+
+\-- fpm.color.main.info.base: 
+light: rgba(15, 87, 96, 1)
+dark: rgba(15, 87, 96, 1)
+
+
+--- tf.h1: This is heading
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+nostrud exercitation
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,59 @@
+-- import: fpm
+
+-- fpm.color.main.info.base: 
+light: rgba(15, 87, 96, 1)
+dark: rgba(15, 87, 96, 1)
+
+-- ftd.type note-title: $fpm.type.copy-relaxed.font
+desktop: $fpm.type.copy-relaxed.desktop
+mobile: $fpm.type.copy-relaxed.mobile
+xl: $fpm.type.copy-relaxed.xl
+weight: 700
+
+
+
+
+
+
+
+
+
+
+-- ftd.column note:
+caption title:
+optional body body:
+optional ftd.ui icon:
+optional string width: 
+background-color: $fpm.color.main.info.base
+padding-horizontal: $fpm.space.space-4
+padding-vertical: $fpm.space.space-4
+border-radius: $fpm.space.space-1
+width: $width
+/open: true
+/append-at: note-container
+
+--- ftd.row:
+
+--- icon:
+if: $icon is not null
+
+--- ftd.row:
+margin-left: $fpm.space.space-2
+
+--- ftd.text: $title
+role: $note-title
+color: $fpm.color.main.info.text
+
+--- container: ftd.main
+
+--- ftd.text:
+if: $body is not null
+text: $body
+role: $fpm.type.copy-relaxed
+color: $fpm.color.main.text-strong
+padding-top: $fpm.space.space-2
+
+
+\--- ftd.column:
+width: fill
+id: note-container

@@ -10,7 +10,10 @@ mobile: $fpm.type.copy-relaxed.mobile
 xl: $fpm.type.copy-relaxed.xl
 weight: 700
 
+-- boolean is-mobile: false
 
+-- is-mobile: true
+if: $ftd.device == mobile
 
 
 
@@ -28,7 +31,8 @@ background-color: $fpm.color.main.info.base
 padding-horizontal: $fpm.space.space-4
 padding-vertical: $fpm.space.space-4
 border-radius: $fpm.space.space-1
-width: $width
+width if not $is-mobile: $width
+width if $is-mobile: fill
 /open: true
 /append-at: note-container
 

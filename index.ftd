@@ -32,7 +32,28 @@ The admonitions package(https://github.com/FifthTry/admonitions). Use `FTD` cust
 
 
 
--- pd.output: Basic usage example
+-- pd.component: How to call admonitions into your project?
+name: https://github.com/FifthTry/admonitions
+
+Add below lines into `fpm.ftd` file
+
+
+-- cb.code:
+lang: ftd
+
+\-- fpm.dependency: fifthtry.github.io/admonitions as cbox
+
+\-- fpm.auto-import: cbox
+
+
+
+
+
+-- pd.output: Basic usage example - Import `cbox` into your `<ftd>.ftd` file
+
+
+\-- import: cbox
+
 
 \-- cbox.note: Noteworthy Heading
 icon: icon.info:

@@ -6,7 +6,6 @@
 -- import: fifthtry.github.io/admonitions/admonition as cbox
 
 
-
 -- fpm.font-copy: $inter.fonts.Inter
 -- fpm.font-code: $inter.fonts.Inter
 -- fpm.font-display: $inter.fonts.Inter
@@ -48,21 +47,15 @@ lang: ftd
 
 
 
--- pd.output: Basic usage example 
+-- pd.output: `cbox.note` Basic usage example 
 
 
 \-- cbox.note: Noteworthy Heading
-icon: icon.info:
-> color: $fpm.color.main.info.text
-width: percent 45
 
 Of all the things possible, this is what you came up with? I am disappointed in 
 your lack of ingenuity.
 
 -- cbox.note: Noteworthy Heading
-icon: icon.info:
-> color: $fpm.color.main.info.text
-width: percent 45
 
 Of all the things possible, this is what you came up with? I am disappointed in 
 your lack of ingenuity.
@@ -71,16 +64,86 @@ your lack of ingenuity.
 -- container: code-wrap
 
 
--- pd.output: Advanced usage example - add more components to note cbox
+
+-- pd.output: `cbox.warning` Basic usage example 
 
 
-\-- cbox.note: Noteworthy Heading
-icon: icon.info:
-> color: $fpm.color.main.info.text
-width: percent 45
+\-- cbox.warning: Caution Heading
 
 Of all the things possible, this is what you came up with? I am disappointed in 
 your lack of ingenuity.
+
+-- cbox.warning: Caution Heading
+
+Of all the things possible, this is what you came up with? I am disappointed in 
+your lack of ingenuity.
+
+
+-- container: code-wrap
+
+
+-- pd.output: `cbox.tip` Basic usage example 
+
+
+\-- cbox.tip: Tip Heading
+
+Of all the things possible, this is what you came up with? I am disappointed in 
+your lack of ingenuity.
+
+-- cbox.tip: Tip Heading
+
+Of all the things possible, this is what you came up with? I am disappointed in 
+your lack of ingenuity.
+
+
+-- container: code-wrap
+
+
+
+-- pd.output: `cbox.danger` Basic usage example 
+
+
+\-- cbox.danger: Danger Heading
+
+Of all the things possible, this is what you came up with? I am disappointed in 
+your lack of ingenuity.
+
+-- cbox.danger: Danger Heading
+
+Of all the things possible, this is what you came up with? I am disappointed in 
+your lack of ingenuity.
+
+
+-- container: code-wrap
+
+
+
+-- pd.output: `cbox.info` Basic usage example 
+
+
+\-- cbox.info: Info Heading
+
+Of all the things possible, this is what you came up with? I am disappointed in 
+your lack of ingenuity.
+
+-- cbox.info: Info Heading
+
+Of all the things possible, this is what you came up with? I am disappointed in 
+your lack of ingenuity.
+
+
+-- container: code-wrap
+
+
+-- pd.output: Advanced usage example - `cbox.tip` - add more components to it
+
+
+\-- cbox.tip: Security Warning
+icon: icon.key:
+> color: $fpm.color.main.info.text
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+
 
 \--- cb.code:
 lang: ftd
@@ -90,7 +153,7 @@ light: rgba(15, 87, 96, 1)
 dark: rgba(15, 87, 96, 1)
 
 
-\--- tf.h1: This is heading
+\--- tf.h3: This is heading
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
@@ -98,13 +161,11 @@ nostrud exercitation
 
 
 
--- cbox.note: Noteworthy Heading
-icon: icon.info:
+-- cbox.tip: Security Warning
+icon: icon.key:
 > color: $fpm.color.main.info.text
-width: percent 45
 
-Of all the things possible, this is what you came up with? I am disappointed in 
-your lack of ingenuity.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
 
 --- cb.code:
 lang: ftd
@@ -114,19 +175,11 @@ light: rgba(15, 87, 96, 1)
 dark: rgba(15, 87, 96, 1)
 
 
---- tf.h1: This is heading
+--- tf.h3: This is heading
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
 nostrud exercitation
 
 
-
-
-
-
-
-
-
-
-
+-- container: code-wrap

@@ -1,17 +1,15 @@
 -- import: fpm
+-- import: icon
 -- import: fifthtry.github.io/admonitions/assets
 -- import: fifthtry.github.io/typography as tf
 -- import: fifthtry.github.io/package-doc/doc as pd
 -- import: fifthtry.github.io/package-doc/code-block as cb
--- import: fifthtry.github.io/admonitions/admonition as cbox
 
 
 -- fpm.font-copy: $inter.fonts.Inter
 -- fpm.font-code: $inter.fonts.Inter
 -- fpm.font-display: $inter.fonts.Inter
 -- fpm.font-copy: $inter.fonts.Inter
-
-
 
 
 -- ftd.column:
@@ -27,9 +25,12 @@ background-color: $fpm.color.main.background.base
 -- pd.package: Admonitions components
 name: fifthtry.github.io/admonitions
 
-The admonitions package(fifthtry.github.io/admonitions). Use `FTD` custom admonitions styles for your web pages.
+The admonitions package(fifthtry.github.io/admonitions). Use `FTD` custom
+admonitions styles for your web pages.
 
-*Icons are used from `FTD` `fifthtry.github.io/octicon` package. To use `ftd` octicons refer: `fifthtry.github.io/octicon`
+*Icons are used from `FTD` `fifthtry.github.io/octicon` package. To use `ftd`
+octicons refer: `fifthtry.github.io/octicon`. Note, you can use any icon library
+you want.
 
 How to use?
 
@@ -47,21 +48,29 @@ lang: ftd
 
 
 
--- pd.output: `cbox.note` Basic usage example 
 
+
+
+
+
+-- pd.output: `cbox.note` Basic usage example
 
 \-- cbox.note: Noteworthy Heading
 
 Of all the things possible, this is what you came up with? I am disappointed in 
 your lack of ingenuity.
 
--- cbox.note: Noteworthy Heading
+-- note: Noteworthy Heading
 
 Of all the things possible, this is what you came up with? I am disappointed in 
 your lack of ingenuity.
 
 
 -- container: code-wrap
+
+
+
+
 
 
 
@@ -73,13 +82,18 @@ your lack of ingenuity.
 Of all the things possible, this is what you came up with? I am disappointed in 
 your lack of ingenuity.
 
--- cbox.warning: Caution Heading
+-- warning: Caution Heading
 
 Of all the things possible, this is what you came up with? I am disappointed in 
 your lack of ingenuity.
 
-
 -- container: code-wrap
+
+
+
+
+
+
 
 
 -- pd.output: `cbox.tip` Basic usage example 
@@ -90,13 +104,19 @@ your lack of ingenuity.
 Of all the things possible, this is what you came up with? I am disappointed in 
 your lack of ingenuity.
 
--- cbox.tip: Tip Heading
+-- tip: Tip Heading
 
 Of all the things possible, this is what you came up with? I am disappointed in 
 your lack of ingenuity.
 
 
 -- container: code-wrap
+
+
+
+
+
+
 
 
 
@@ -108,13 +128,17 @@ your lack of ingenuity.
 Of all the things possible, this is what you came up with? I am disappointed in 
 your lack of ingenuity.
 
--- cbox.danger: Danger Heading
+-- danger: Danger Heading
 
 Of all the things possible, this is what you came up with? I am disappointed in 
 your lack of ingenuity.
 
 
 -- container: code-wrap
+
+
+
+
 
 
 
@@ -126,7 +150,7 @@ your lack of ingenuity.
 Of all the things possible, this is what you came up with? I am disappointed in 
 your lack of ingenuity.
 
--- cbox.info: Info Heading
+-- info: Info Heading
 
 Of all the things possible, this is what you came up with? I am disappointed in 
 your lack of ingenuity.
@@ -135,22 +159,49 @@ your lack of ingenuity.
 -- container: code-wrap
 
 
--- pd.output: Advanced usage example - `cbox.tip` - add more components to it
+
+
+-- pd.output: Using Custom Icon
 
 
 \-- cbox.tip: Security Warning
 icon: icon.key:
 > color: $fpm.color.main.info.text
 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+
+-- tip: Security Warning
+icon: icon.key:
+> color: $fpm.color.main.info.text
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+
+
+-- container: code-wrap
+
+
+
+
+
+
+-- pd.output: Advanced usage example - `cbox.tip` - add more components to it
+
+
+\-- cbox.tip: Security Warning
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
 
 
-\--- cb.code:
+\--- cb.code: Some Caption
 lang: ftd
 
 \--- fpm.color.main.info.base:
 light: rgba(15, 87, 96, 1)
 dark: rgba(15, 87, 96, 1)
+
+\--- danger: You can nest stuff too!
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 
 
 \--- tf.h3: This is heading
@@ -160,14 +211,11 @@ incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
 nostrud exercitation
 
 
-
--- cbox.tip: Security Warning
-icon: icon.key:
-> color: $fpm.color.main.info.text
+-- tip: Security Warning
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
 
---- cb.code:
+--- cb.code: Some Caption
 lang: ftd
 
 \-- fpm.color.main.info.base: 
@@ -175,7 +223,13 @@ light: rgba(15, 87, 96, 1)
 dark: rgba(15, 87, 96, 1)
 
 
+--- danger: You can nest stuff too!
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+
+
 --- tf.h3: This is heading
+
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
@@ -183,3 +237,217 @@ nostrud exercitation
 
 
 -- container: code-wrap
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- fpm.color.main.info.base:
+light: rgba(15, 87, 96, 1)
+dark: rgba(15, 87, 96, 1)
+
+
+-- fpm.color.main.warning.base:
+light: rgba(150, 98, 32, 1)
+dark: rgba(150, 98, 32, 1)
+
+-- fpm.color.main.warning.text:
+light: rgba(251, 239, 186, 1)
+dark: rgba(251, 239, 186, 1)
+
+
+-- fpm.color.main.success.base:
+light: rgba(21, 79, 34, 1)
+dark: rgba(21, 79, 34, 1)
+
+
+-- fpm.color.main.success.text:
+light: rgba(191, 255, 192, 1)
+dark: rgba(191, 255, 192, 1)
+
+
+-- fpm.color.main.error.base:
+light: rgba(92, 39, 39, 1)
+dark: rgba(92, 39, 39, 1)
+
+-- fpm.color.main.error.text:
+light: rgba(255, 121, 121, 1)
+dark: rgba(255, 121, 121, 1)
+
+
+-- fpm.color.main.background.step-1:
+light: rgba(45, 212, 191, 0.1)
+dark: rgba(45, 212, 191, 0.1)
+
+
+
+
+-- ftd.type note-title: $fpm.type.copy-relaxed.font
+desktop: $fpm.type.copy-relaxed.desktop
+mobile: $fpm.type.copy-relaxed.mobile
+xl: $fpm.type.copy-relaxed.xl
+weight: 700
+
+-- boolean is-mobile: false
+
+-- is-mobile: true
+if: $ftd.device == mobile
+
+
+
+
+
+
+
+
+-- cbox note:
+caption title:
+optional body body:
+title-color: $fpm.color.main.info.text
+text-color: $fpm.color.main.text-strong
+title: $title
+body: $body
+ftd.ui icon: icon.info:
+icon: $icon
+background-color: $fpm.color.main.info.base
+
+
+
+
+
+
+
+
+
+
+-- cbox warning:
+caption title:
+optional body body:
+title-color: $fpm.color.main.warning.text
+text-color: $fpm.color.main.text-strong
+title: $title
+body: $body
+ftd.ui icon: icon.alert:
+icon: $icon
+background-color: $fpm.color.main.warning.base
+
+
+
+
+
+
+
+
+
+
+
+-- cbox tip:
+caption title:
+optional body body:
+title-color: $fpm.color.main.success.text
+text-color: $fpm.color.main.text-strong
+title: $title
+body: $body
+ftd.ui icon: icon.light-bulb:
+icon: $icon
+background-color: $fpm.color.main.success.base
+
+
+
+
+
+
+
+
+
+
+-- cbox danger:
+caption title:
+optional body body:
+title-color: $fpm.color.main.error.text
+text-color: $fpm.color.main.text-strong
+title: $title
+body: $body
+ftd.ui icon: icon.stop:
+icon: $icon
+background-color: $fpm.color.main.error.base
+
+
+
+
+
+
+
+
+
+-- cbox info:
+caption title:
+optional body body:
+title-color: $fpm.color.main.text-strong
+text-color: $fpm.color.main.text-strong
+title: $title
+body: $body
+ftd.ui icon: icon.issue-opened:
+icon: $icon
+background-color: $fpm.color.main.background.step-1
+
+
+
+
+
+
+
+
+
+
+
+-- ftd.column cbox:
+caption title:
+optional body body:
+ftd.color title-color: $fpm.color.main.info.text
+ftd.color text-color: $fpm.color.main.text-strong
+color: $title-color
+optional ftd.ui icon:
+ftd.color background-color: $fpm.color.main.info.base
+background-color: $background-color
+padding-horizontal: $fpm.space.space-4
+padding-vertical: $fpm.space.space-4
+padding-right: $fpm.space.space-9
+border-radius: $fpm.space.space-1
+width if not $is-mobile: auto
+width if $is-mobile: fill
+min-width: percent 50
+open: false
+
+--- ftd.row:
+
+--- icon:
+if: $icon is not null
+
+--- ftd.row:
+margin-left: $fpm.space.space-2
+
+--- ftd.text: $title
+role: $note-title
+color: $title-color
+
+--- container: ftd.main
+
+--- ftd.text:
+if: $body is not null
+text: $body
+role: $fpm.type.copy-relaxed
+color: $text-color
+padding-top: $fpm.space.space-2

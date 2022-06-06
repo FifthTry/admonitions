@@ -27,10 +27,6 @@ name: fifthtry.github.io/admonitions
 The admonitions package(fifthtry.github.io/admonitions). Use `FTD` custom
 admonitions styles for your web pages.
 
-*Icons are used from `FTD` `fifthtry.github.io/octicon` package. To use `ftd`
-octicons refer: `fifthtry.github.io/octicon`. Note, you can use any icon library
-you want.
-
 How to use?
 
 Add below lines into `FPM.ftd` file:
@@ -160,18 +156,16 @@ your lack of ingenuity.
 
 
 
--- pd.output: Using Custom Icon
+-- pd.output: Using Custom Emoji
 
 
 \-- cbox.tip: Security Warning
-icon: icon.key:
-> color: $fpm.color.main.info.text
+emoji: ⚙️
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 
 -- tip: Security Warning
-icon: icon.key:
-> color: $fpm.color.main.info.text
+emoji: ⚙️
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 
@@ -187,6 +181,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 
 
 \-- cbox.tip: Security Warning
+emoji: 	🔑
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
 
@@ -199,6 +194,7 @@ light: rgba(15, 87, 96, 1)
 dark: rgba(15, 87, 96, 1)
 
 \--- danger: You can nest stuff too!
+emoji: 	🔑
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 
@@ -211,18 +207,19 @@ nostrud exercitation
 
 
 -- tip: Security Warning
+emoji: 	🔑
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
 
---- cb.code: Some Caption
+--- cb.code: Example code:
 lang: ftd
 
-\-- fpm.color.main.info.base: 
-light: rgba(15, 87, 96, 1)
-dark: rgba(15, 87, 96, 1)
+\-- danger: You can nest stuff too!
+emoji: 	⚡
 
 
 --- danger: You can nest stuff too!
+emoji: ⚡
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 
@@ -314,11 +311,13 @@ if: $ftd.device == mobile
 -- cbox note:
 caption title:
 optional body body:
+optional string emoji:❕
+emoji: $emoji
 title-color: $fpm.color.main.info.text
 text-color: $fpm.color.main.text-strong
 title: $title
 body: $body
-ftd.ui icon: icon.info:
+optional ftd.ui icon:
 icon: $icon
 background-color: $fpm.color.main.info.base
 
@@ -334,11 +333,13 @@ background-color: $fpm.color.main.info.base
 -- cbox warning:
 caption title:
 optional body body:
+optional string emoji: ⚠️
+emoji: $emoji
 title-color: $fpm.color.main.warning.text
 text-color: $fpm.color.main.text-strong
 title: $title
 body: $body
-ftd.ui icon: icon.alert:
+optional ftd.ui icon:
 icon: $icon
 background-color: $fpm.color.main.warning.base
 
@@ -355,11 +356,13 @@ background-color: $fpm.color.main.warning.base
 -- cbox tip:
 caption title:
 optional body body:
+optional string emoji: 💡
+emoji: $emoji
 title-color: $fpm.color.main.success.text
 text-color: $fpm.color.main.text-strong
 title: $title
 body: $body
-ftd.ui icon: icon.light-bulb:
+optional ftd.ui icon: 
 icon: $icon
 background-color: $fpm.color.main.success.base
 
@@ -375,11 +378,13 @@ background-color: $fpm.color.main.success.base
 -- cbox danger:
 caption title:
 optional body body:
+optional string emoji: ☢️
+emoji: $emoji
 title-color: $fpm.color.main.error.text
 text-color: $fpm.color.main.text-strong
 title: $title
 body: $body
-ftd.ui icon: icon.stop:
+optional ftd.ui icon:
 icon: $icon
 background-color: $fpm.color.main.error.base
 
@@ -394,11 +399,13 @@ background-color: $fpm.color.main.error.base
 -- cbox info:
 caption title:
 optional body body:
+optional string emoji: ℹ️
+emoji: $emoji
 title-color: $fpm.color.main.text-strong
 text-color: $fpm.color.main.text-strong
 title: $title
 body: $body
-ftd.ui icon: icon.issue-opened:
+optional ftd.ui icon: 
 icon: $icon
 background-color: $fpm.color.main.background.step-1
 
@@ -419,6 +426,7 @@ ftd.color title-color: $fpm.color.main.info.text
 ftd.color text-color: $fpm.color.main.text-strong
 color: $title-color
 optional ftd.ui icon:
+optional string emoji:
 ftd.color background-color: $fpm.color.main.info.base
 background-color: $background-color
 padding-horizontal: $fpm.space.space-4
@@ -435,6 +443,9 @@ open: false
 --- icon:
 if: $icon is not null
 
+--- emoji: $emoji
+if: $icon is null
+
 --- ftd.row:
 margin-left: $fpm.space.space-2
 
@@ -450,3 +461,12 @@ text: $body
 role: $fpm.type.copy-relaxed
 color: $text-color
 padding-top: $fpm.space.space-2
+
+
+
+-- ftd.text emoji: $title
+optional caption title:
+optional ftd.color color:
+color: $color
+role: $note-title
+

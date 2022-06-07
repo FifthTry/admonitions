@@ -181,20 +181,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 
 
 \-- cbox.tip: Security Warning
-emoji: 	🔑
+emoji: 🔑
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
 
 
-\--- cb.code: Some Caption
+\--- cb.code: Example code:
 lang: ftd
 
-\--- fpm.color.main.info.base:
-light: rgba(15, 87, 96, 1)
-dark: rgba(15, 87, 96, 1)
-
 \--- danger: You can nest stuff too!
-emoji: 	🔑
+emoji: ⚡
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 
@@ -207,7 +203,7 @@ nostrud exercitation
 
 
 -- tip: Security Warning
-emoji: 	🔑
+emoji: 🔑
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
 
@@ -215,7 +211,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 lang: ftd
 
 \-- danger: You can nest stuff too!
-emoji: 	⚡
+emoji: ⚡
 
 
 --- danger: You can nest stuff too!

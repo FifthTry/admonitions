@@ -375,6 +375,7 @@ border-radius: $fpm.space.space-1
 width if not $is-mobile: auto
 width if $is-mobile: fill
 min-width: percent 50
+margin-bottom: 26
 open: false
 
 --- ftd.row:

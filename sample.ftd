@@ -1,0 +1,106 @@
+-- import: fpm
+-- import: icon
+-- import: fifthtry.github.io/typography as tf
+-- import: fifthtry.github.io/package-doc/doc as pd
+-- import: fifthtry.github.io/package-doc/code-block as cb
+-- import: fifthtry.github.io/admonitions as cbox
+
+
+
+
+
+-- ftd.column:
+width: fill
+align: center
+spacing: 20
+padding-horizontal: 20
+padding-vertical: 20
+background-color: $fpm.color.main.background.base
+
+-- ftd.column:
+width: 770
+id: code-wrap
+spacing: 20
+
+-- cbox.note: Noteworthy Heading
+
+Of all the things possible, this is what you came up with? I am disappointed in 
+your lack of ingenuity.
+
+
+-- container: code-wrap
+
+
+-- cbox.warning: Caution Heading
+
+Of all the things possible, this is what you came up with? I am disappointed in 
+your lack of ingenuity.
+
+-- container: code-wrap
+
+
+-- cbox.tip: Tip Heading
+
+Of all the things possible, this is what you came up with? I am disappointed in 
+your lack of ingenuity.
+
+
+-- container: code-wrap
+
+
+-- cbox.danger: Danger Heading
+
+Of all the things possible, this is what you came up with? I am disappointed in 
+your lack of ingenuity.
+
+
+-- container: code-wrap
+
+
+-- cbox.info: Info Heading
+
+Of all the things possible, this is what you came up with? I am disappointed in 
+your lack of ingenuity.
+
+
+-- container: code-wrap
+
+
+
+-- cbox.tip: Security Warning
+emoji: ⚙️
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+your lack of ingenui
+
+
+-- container: code-wrap
+
+
+-- cbox.tip: Security Warning
+emoji: 🔑
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+
+--- cb.code: Example code:
+lang: ftd
+
+\-- cbox.danger: You can nest stuff too!
+emoji: ⚡
+
+
+--- cbox.danger: You can nest stuff too!
+emoji: ⚡
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+
+
+--- tf.h3: This is heading
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+nostrud exercitation
+
+
+-- container: code-wrap

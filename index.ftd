@@ -16,7 +16,7 @@ id: code-wrap
 width: fill
 align: center
 spacing: 20
-padding-horizontal: 50
+padding-horizontal: 20
 padding-vertical: 20
 background-color: $fpm.color.main.background.base
 
@@ -239,13 +239,6 @@ nostrud exercitation
 
 
 
-
-
-
-
-
-
-
 -- fpm.color.main.info.base:
 light: rgba(15, 87, 96, 1)
 dark: rgba(15, 87, 96, 1)
@@ -279,9 +272,15 @@ light: rgba(255, 121, 121, 1)
 dark: rgba(255, 121, 121, 1)
 
 
--- fpm.color.main.background.step-1:
+-- ftd.color info-base:
 light: rgba(45, 212, 191, 0.1)
 dark: rgba(45, 212, 191, 0.1)
+
+
+
+
+
+
 
 
 
@@ -304,12 +303,14 @@ if: $ftd.device == mobile
 
 
 
+
+
 -- cbox note:
 caption title:
 optional body body:
 optional string emoji:❕
 emoji: $emoji
-title-color: $fpm.color.main.info.text
+title-color: $fpm.color.main.text
 text-color: $fpm.color.main.text-strong
 title: $title
 body: $body
@@ -403,7 +404,7 @@ title: $title
 body: $body
 optional ftd.ui icon: 
 icon: $icon
-background-color: $fpm.color.main.background.step-1
+background-color: $info-base
 
 
 
@@ -457,6 +458,13 @@ text: $body
 role: $fpm.type.copy-relaxed
 color: $text-color
 padding-top: $fpm.space.space-2
+
+
+
+
+
+
+
 
 
 

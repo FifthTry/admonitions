@@ -10,6 +10,11 @@
 -- fpm.font-display: $inter.fonts.Inter
 -- fpm.font-copy: $inter.fonts.Inter
 
+-- boolean is-mobile: false
+
+-- is-mobile: true
+if: $ftd.device == mobile
+
 
 -- ftd.column:
 id: code-wrap
@@ -202,7 +207,7 @@ incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
 nostrud exercitation
 
 
--- tip: Security Warning
+-- danger: Security Warning
 emoji: 🔑
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
@@ -239,79 +244,13 @@ nostrud exercitation
 
 
 
--- fpm.color.main.info.base:
-light: rgba(15, 87, 96, 1)
-dark: rgba(15, 87, 96, 1)
-
-
--- fpm.color.main.warning.base:
-light: rgba(150, 98, 32, 1)
-dark: rgba(150, 98, 32, 1)
-
--- fpm.color.main.warning.text:
-light: rgba(251, 239, 186, 1)
-dark: rgba(251, 239, 186, 1)
-
-
--- fpm.color.main.success.base:
-light: rgba(21, 79, 34, 1)
-dark: rgba(21, 79, 34, 1)
-
-
--- fpm.color.main.success.text:
-light: rgba(191, 255, 192, 1)
-dark: rgba(191, 255, 192, 1)
-
-
--- fpm.color.main.error.base:
-light: rgba(92, 39, 39, 1)
-dark: rgba(92, 39, 39, 1)
-
--- fpm.color.main.error.text:
-light: rgba(255, 121, 121, 1)
-dark: rgba(255, 121, 121, 1)
-
-
--- ftd.color info-base:
-light: rgba(45, 212, 191, 0.1)
-dark: rgba(45, 212, 191, 0.1)
-
-
-
-
-
-
-
-
-
-
--- ftd.type note-title: $fpm.type.copy-relaxed.font
-desktop: $fpm.type.copy-relaxed.desktop
-mobile: $fpm.type.copy-relaxed.mobile
-xl: $fpm.type.copy-relaxed.xl
-weight: 700
-
--- boolean is-mobile: false
-
--- is-mobile: true
-if: $ftd.device == mobile
-
-
-
-
-
-
-
-
-
-
 -- cbox note:
 caption title:
 optional body body:
-optional string emoji:❕
+optional string emoji: 🗒️
 emoji: $emoji
-title-color: $fpm.color.main.text
-text-color: $fpm.color.main.text-strong
+title-color: $fpm.color.main.info.text
+text-color: $fpm.color.main.info.text
 title: $title
 body: $body
 optional ftd.ui icon:
@@ -333,7 +272,7 @@ optional body body:
 optional string emoji: ⚠️
 emoji: $emoji
 title-color: $fpm.color.main.warning.text
-text-color: $fpm.color.main.text-strong
+text-color: $fpm.color.main.warning.text
 title: $title
 body: $body
 optional ftd.ui icon:
@@ -356,12 +295,16 @@ optional body body:
 optional string emoji: 💡
 emoji: $emoji
 title-color: $fpm.color.main.success.text
-text-color: $fpm.color.main.text-strong
+text-color: $fpm.color.main.success.text
 title: $title
 body: $body
 optional ftd.ui icon: 
 icon: $icon
-background-color: $fpm.color.main.success.base
+background-color: $fpm.color.main.warning.base
+
+
+
+
 
 
 
@@ -378,7 +321,7 @@ optional body body:
 optional string emoji: ☢️
 emoji: $emoji
 title-color: $fpm.color.main.error.text
-text-color: $fpm.color.main.text-strong
+text-color: $fpm.color.main.error.text
 title: $title
 body: $body
 optional ftd.ui icon:
@@ -398,13 +341,12 @@ caption title:
 optional body body:
 optional string emoji: ℹ️
 emoji: $emoji
-title-color: $fpm.color.main.text-strong
-text-color: $fpm.color.main.text-strong
+title-color: $fpm.color.main.info.text
+text-color: $fpm.color.main.info.text
 title: $title
 body: $body
 optional ftd.ui icon: 
 icon: $icon
-background-color: $info-base
 
 
 
@@ -420,7 +362,7 @@ background-color: $info-base
 caption title:
 optional body body:
 ftd.color title-color: $fpm.color.main.info.text
-ftd.color text-color: $fpm.color.main.text-strong
+ftd.color text-color: $fpm.color.main.info.text
 color: $title-color
 optional ftd.ui icon:
 optional string emoji:
@@ -447,8 +389,9 @@ if: $icon is null
 margin-left: $fpm.space.space-2
 
 --- ftd.text: $title
-role: $note-title
+role: $fpm.type.copy-relaxed
 color: $title-color
+style: bold
 
 --- container: ftd.main
 
@@ -470,7 +413,6 @@ padding-top: $fpm.space.space-2
 
 -- ftd.text emoji: $title
 optional caption title:
-optional ftd.color color:
-color: $color
-role: $note-title
+role: $fpm.type.copy-relaxed
+style: bold
 

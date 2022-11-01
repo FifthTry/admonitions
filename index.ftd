@@ -240,6 +240,25 @@ nostrud exercitation
 
 
 
+-- pd.output: `cbox.text` Basic usage example
+
+\-- cbox.text: Textworthy Heading
+
+Of all the things possible, this is what you came up with? I am disappointed in 
+your lack of ingenuity.
+
+-- text: Textworthy Heading
+
+Of all the things possible, this is what you came up with? I am disappointed in 
+your lack of ingenuity. 
+
+-- container: code-wrap
+
+
+
+
+
+
 
 
 
@@ -418,3 +437,45 @@ optional caption title:
 role: $fpm.type.copy-relaxed
 style: bold
 
+
+
+
+
+
+
+
+
+
+-- ftd.column text:
+optional caption caption:
+body body:
+width: fill
+margin-top: 16
+margin-bottom: 16
+
+--- ftd.text:
+text: $caption
+if: $caption is not null
+role: $fpm.type.copy-relaxed
+color: $fpm.color.main.background.step-1
+width: fill
+background-color: $fpm.color.main.custom.three
+padding-top: 10
+padding-bottom: 10
+padding-left: 20
+padding-right: 20
+border-top-radius: 8
+
+--- ftd.text:
+text: $body
+width: fill
+role: $fpm.type.copy-relaxed
+color: $fpm.color.main.background.base
+padding-top: 10
+padding-left: 20
+padding-bottom: 10
+padding-right: 20
+background-color: $fpm.color.main.info.base
+border-top-radius if $caption is null: 4
+border-bottom-radius: 8
+overflow-x: auto

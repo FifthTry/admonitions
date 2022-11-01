@@ -19,7 +19,7 @@ background-color: $fpm.color.main.background.base
 
 -- ftd.column:
 width: 770
-id: code-wrap
+id: code-wrap-2
 spacing: 20
 
 -- cbox.note: Noteworthy Heading
@@ -28,7 +28,7 @@ Of all the things possible, this is what you came up with? I am disappointed in
 your lack of ingenuity.
 
 
--- container: code-wrap
+-- container: code-wrap-2
 
 
 -- cbox.warning: Caution Heading
@@ -36,7 +36,7 @@ your lack of ingenuity.
 Of all the things possible, this is what you came up with? I am disappointed in 
 your lack of ingenuity.
 
--- container: code-wrap
+-- container: code-wrap-2
 
 
 -- cbox.tip: Tip Heading
@@ -45,7 +45,7 @@ Of all the things possible, this is what you came up with? I am disappointed in
 your lack of ingenuity.
 
 
--- container: code-wrap
+-- container: code-wrap-2
 
 
 -- cbox.danger: Danger Heading
@@ -54,7 +54,7 @@ Of all the things possible, this is what you came up with? I am disappointed in
 your lack of ingenuity.
 
 
--- container: code-wrap
+-- container: code-wrap-2
 
 
 -- cbox.info: Info Heading
@@ -63,7 +63,7 @@ Of all the things possible, this is what you came up with? I am disappointed in
 your lack of ingenuity.
 
 
--- container: code-wrap
+-- container: code-wrap-2
 
 
 
@@ -74,7 +74,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 your lack of ingenui
 
 
--- container: code-wrap
+-- container: code-wrap-2
 
 
 -- cbox.tip: Security Warning
@@ -103,4 +103,4 @@ incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
 nostrud exercitation
 
 
--- container: code-wrap
+-- container: code-wrap-2

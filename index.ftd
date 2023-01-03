@@ -25,7 +25,6 @@ padding-horizontal: 20
 padding-vertical: 20
 background-color: $fpm.color.main.background.base
 
-
 -- pd.package: Admonitions components
 name: fifthtry.github.io/admonitions
 

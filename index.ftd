@@ -1,9 +1,9 @@
 -- import: fpm
--- import: fifthtry.github.io/admonitions/code as cb
+-- import: fifthtry.github.io/typography as tf
+-- import: fifthtry.github.io/package-doc/doc as pd
+-- import: fifthtry.github.io/package-doc/code-block as cb
+;;-- import: fifthtry.github.io/admonitions/code as cb
 ;;-- import: icon -- TODO FTD 0.3
-;;-- import: fifthtry.github.io/typography as tf
-;;-- import: fifthtry.github.io/package-doc/doc as pd
-;;-- import: fifthtry.github.io/package-doc/code-block as cb
 
 
 ;;-- fpm.font-copy: $inter.fonts.Inter

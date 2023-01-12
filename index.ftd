@@ -2,14 +2,12 @@
 -- import: fifthtry.github.io/typography as tf
 -- import: fifthtry.github.io/package-doc/doc as pd
 -- import: fifthtry.github.io/package-doc/code-block as cb
-;;-- import: fifthtry.github.io/admonitions/code as cb
-;;-- import: icon -- TODO FTD 0.3
 
 
-;;-- fpm.font-copy: $inter.fonts.Inter
-;;-- fpm.font-code: $inter.fonts.Inter
-;;-- fpm.font-display: $inter.fonts.Inter
-;;-- fpm.font-copy: $inter.fonts.Inter
+;;-- fpm.font-copy: $inter.fonts.Roboto
+;;-- fpm.font-code: $inter.fonts.Roboto
+;;-- fpm.font-display: $inter.fonts.Roboto
+;;-- fpm.font-copy: $inter.fonts.Roboto
 
 
 -- ftd.column:

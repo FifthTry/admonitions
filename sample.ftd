@@ -10,17 +10,16 @@
 
 
 -- ftd.column:
-width: fill
-align: center
-spacing: 20
-padding-horizontal: 20
-padding-vertical: 20
-background-color: $fpm.color.main.background.base
+width: fill-container
+spacing.px: 20
+padding-horizontal.px: 20
+padding-vertical.px: 20
+background.solid: $inherited.colors.background.base
 
 -- ftd.column:
-width: 770
-id: code-wrap-2
-spacing: 20
+width.fixed.px: 770
+spacing.px: 20
+align-self: center
 
 -- cbox.note: Noteworthy Heading
 
@@ -28,15 +27,11 @@ Of all the things possible, this is what you came up with? I am disappointed in
 your lack of ingenuity.
 
 
--- container: code-wrap-2
-
 
 -- cbox.warning: Caution Heading
 
 Of all the things possible, this is what you came up with? I am disappointed in 
 your lack of ingenuity.
-
--- container: code-wrap-2
 
 
 -- cbox.tip: Tip Heading
@@ -45,8 +40,6 @@ Of all the things possible, this is what you came up with? I am disappointed in
 your lack of ingenuity.
 
 
--- container: code-wrap-2
-
 
 -- cbox.danger: Danger Heading
 
@@ -54,16 +47,12 @@ Of all the things possible, this is what you came up with? I am disappointed in
 your lack of ingenuity.
 
 
--- container: code-wrap-2
-
 
 -- cbox.info: Info Heading
 
 Of all the things possible, this is what you came up with? I am disappointed in 
 your lack of ingenuity.
 
-
--- container: code-wrap-2
 
 
 
@@ -73,8 +62,6 @@ emoji: ⚙️
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 your lack of ingenui
 
-
--- container: code-wrap-2
 
 
 -- cbox.tip: Security Warning
@@ -103,4 +90,6 @@ incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
 nostrud exercitation
 
 
--- container: code-wrap-2
+-- end: ftd.column
+
+-- end: ftd.column

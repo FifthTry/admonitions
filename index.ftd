@@ -14,9 +14,9 @@
 ;; id: code-wrap -- TODO FTD 0.3
 width: fill-container
 align-self: center
-spacing.px: 20
-padding-horizontal.px.px: 20
-padding-vertical.px.px: 20
+spacing.fixed.px: 20
+padding-horizontal.px: 20
+padding-vertical.px: 20
 background.solid: $inherited.colors.background.base
 
 
@@ -133,9 +133,9 @@ emoji: ⚡
 width: fill-container
 background.solid: $inherited.colors.background.base
 align-self: center
-spacing.px: 20
-padding-horizontal.px.px: 20
-padding-vertical.px.px: 20
+spacing.fixed.px: 20
+padding-horizontal.px: 20
+padding-vertical.px: 20
 
 
 -- end: ftd.column

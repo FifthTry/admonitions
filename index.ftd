@@ -373,7 +373,7 @@ if: { icon != NULL }
 margin-left.px: 8
 
 -- ftd.text: $cbox.title
-role: $inherited.types.copy-relaxed
+role: $inherited.types.copy-regular
 color: $cbox.title-color
 ;; style: bold -- TODO FTD 0.3
 
@@ -384,7 +384,7 @@ color: $cbox.title-color
 -- ftd.text:
 if: { cbox.body != NULL }
 text: $cbox.body
-role: $inherited.types.copy-relaxed
+role: $inherited.types.copy-regular
 color: $cbox.text-color
 padding-top.px: 8
 
@@ -409,7 +409,7 @@ children: $cbox.wrapper
 optional caption title:
 
 -- ftd.text: $emoji.title
-role: $inherited.types.copy-relaxed
+role: $inherited.types.copy-regular
 ;; style: bold -- TODO FTD 0.3
 
 -- end: emoji
@@ -435,7 +435,7 @@ margin-bottom.px: 16
 -- ftd.text:
 if: { text-1.caption != NULL }
 text: $text-1.caption
-role: $inherited.types.copy-relaxed
+role: $inherited.types.copy-regular
 color: $inherited.colors.background.step-1
 width: fill-container
 background.solid: $inherited.colors.custom.three
@@ -449,7 +449,7 @@ border-top-right-radius.px: 8
 -- ftd.text:
 text: $text-1.body
 width: fill-container
-role: $inherited.types.copy-relaxed
+role: $inherited.types.copy-regular
 color: $inherited.colors.background.base
 padding-top.px: 10
 padding-left.px: 20
@@ -485,7 +485,7 @@ margin-bottom.px: 16
 -- ftd.text:
 if: { text-2.caption != NULL }
 text: $text-2.caption
-role: $inherited.types.copy-relaxed
+role: $inherited.types.copy-regular
 color: $inherited.colors.background.step-1
 width: fill-container
 background.solid: $inherited.colors.cta-primary.base
@@ -499,7 +499,7 @@ border-top-right-radius.px: 8
 -- ftd.text:
 text: $text-2.body
 width: fill-container
-role: $inherited.types.copy-relaxed
+role: $inherited.types.copy-regular
 color: $inherited.colors.background.base
 padding-top.px: 10
 padding-left.px: 20
@@ -537,7 +537,7 @@ margin-bottom.px: 16
 -- ftd.text:
 if: { text-3.caption !=NULL }
 text: $text-3.caption
-role: $inherited.types.copy-relaxed
+role: $inherited.types.copy-regular
 color: $inherited.colors.background.step-1
 width: fill-container
 background.solid: $inherited.colors.custom.two
@@ -551,7 +551,7 @@ border-top-right-radius.px: 8
 -- ftd.text:
 text: $text-3.body
 width: fill-container
-role: $inherited.types.copy-relaxed
+role: $inherited.types.copy-regular
 color: $inherited.colors.background.base
 padding-top.px: 10
 padding-left.px: 20
@@ -589,7 +589,7 @@ margin-bottom.px: 16
 -- ftd.text:
 if: { text-4.caption != NULL }
 text: $text-4.caption
-role: $inherited.types.copy-relaxed
+role: $inherited.types.copy-regular
 color: $inherited.colors.text-strong
 width: fill-container
 background.solid: $inherited.colors.background.step-2
@@ -603,7 +603,7 @@ border-top-right-radius.px: 8
 -- ftd.text:
 text: $text-4.body
 width: fill-container
-role: $inherited.types.copy-relaxed
+role: $inherited.types.copy-regular
 color: $inherited.colors.text
 padding-top.px: 10
 padding-left.px: 20

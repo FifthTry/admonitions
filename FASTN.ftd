@@ -1,0 +1,15 @@
+-- import: fastn
+
+-- fastn.package: fifthtry.github.io/admonitions
+zip: github.com/fifthtry/admonitions/archive/refs/heads/main.zip
+download-base-url: https://raw.githubusercontent.com/fifthtry/admonitions/main
+
+-- fastn.dependency: fifthtry.github.io/package-doc as pd
+-- fastn.dependency: fifthtry.github.io/typography as tf
+;; -- fastn.dependency: fifthtry.github.io/octicon as icon
+-- fastn.dependency: fifthtry.github.io/roboto
+
+
+
+;; -- fastn.auto-import: icon
+-- fastn.auto-import: fifthtry.github.io/roboto/assets as roboto

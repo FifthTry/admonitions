@@ -1,4 +1,4 @@
--- import: fpm
+-- import: fastn
 -- import: icon
 -- import: fifthtry.github.io/typography as tf
 -- import: fifthtry.github.io/package-doc/doc as pd
@@ -11,14 +11,14 @@
 
 -- ftd.column:
 width: fill-container
-spacing.px: 20
+spacing.fixed.px: 20
 padding-horizontal.px: 20
 padding-vertical.px: 20
 background.solid: $inherited.colors.background.base
 
 -- ftd.column:
 width.fixed.px: 770
-spacing.px: 20
+spacing.fixed.px: 20
 align-self: center
 
 -- cbox.note: Noteworthy Heading

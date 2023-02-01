@@ -1,13 +1,13 @@
--- import: fpm
+-- import: fastn
 -- import: fifthtry.github.io/typography as tf
 -- import: fifthtry.github.io/package-doc/doc as pd
 -- import: fifthtry.github.io/package-doc/code-block as cb
 
 
-;;-- fpm.font-copy: $roboto.fonts.Roboto
-;;-- fpm.font-code: $roboto.fonts.Roboto
-;;-- fpm.font-display: $roboto.fonts.Roboto
-;;-- fpm.font-copy: $roboto.fonts.Roboto
+;;-- fastn.font-copy: $roboto.fonts.Roboto
+;;-- fastn.font-code: $roboto.fonts.Roboto
+;;-- fastn.font-display: $roboto.fonts.Roboto
+;;-- fastn.font-copy: $roboto.fonts.Roboto
 
 
 -- ftd.column:

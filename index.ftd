@@ -2,12 +2,11 @@
 -- import: fifthtry.github.io/typography as tf
 -- import: fifthtry.github.io/package-doc/doc as pd
 -- import: fifthtry.github.io/package-doc/code-block as cb
+-- import: fifthtry.github.io/roboto-font/assets as roboto
 
-
-;;-- fastn.font-copy: $roboto.fonts.Roboto
-;;-- fastn.font-code: $roboto.fonts.Roboto
-;;-- fastn.font-display: $roboto.fonts.Roboto
-;;-- fastn.font-copy: $roboto.fonts.Roboto
+-- $ftd.font-copy: $roboto.fonts.Roboto
+-- $ftd.font-code: $roboto.fonts.Roboto
+-- $ftd.font-display: $roboto.fonts.Roboto
 
 
 -- ftd.column:

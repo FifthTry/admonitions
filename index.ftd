@@ -1,6 +1,7 @@
 -- import: fastn
 -- import: fifthtry.github.io/typography as tf
 -- import: fifthtry.github.io/package-doc/doc as pd
+-- import: fifthtry.github.io/package-doc/forest-theme as ft
 -- import: fifthtry.github.io/package-doc/code-block as cb
 -- import: fifthtry.github.io/roboto-font/assets as roboto
 
@@ -9,15 +10,40 @@
 -- $ftd.font-display: $roboto.fonts.Roboto
 
 
--- ftd.column:
-;; id: code-wrap -- TODO FTD 0.3
-width: fill-container
-align-self: center
-spacing.fixed.px: 20
-padding-horizontal.px: 20
-padding-vertical.px: 20
-background.solid: $inherited.colors.background.base
+-- ft.page:
 
+
+-- pd.package: Admonitions
+name: fifthtry.github.io/admonitions
+
+The admonitions package(fifthtry.github.io/admonitions). Use `FTD` custom
+admonitions styles for your web pages.
+
+How to use?
+
+-- cb.code: Add this to your FASTN.ftd
+lang: ftd
+
+\-- fastn.dependency: fifthtry.github.io/admonitions as cbox
+
+\-- fastn.auto-import: cbox
+
+-- pd.component: `cbox.note` Basic usage example
+name: `-- cbox.note:`
+
+Use below code snippet to use this admonitions component as cbox.
+
+-- cb.code: How to use
+lang: ftd
+
+\-- cbox.note: Noteworthy Heading
+
+Of all the things possible, this is what you came up with? I am disappointed in 
+your lack of ingenuity.
+
+\-- end: cbox.note
+
+-- tf.h3: Output of above example:
 
 -- note: Noteworthy Heading
 
@@ -28,116 +54,259 @@ your lack of ingenuity.
 
 
 
--- warning: Caution Heading
+
+-- pd.component: `cbox.warning` Basic usage example
+name: `-- cbox.warning:`
+
+Use below code snippet to use this admonitions component as cbox.
+
+-- cb.code: How to use
+lang: ftd
+
+\-- cbox.warning: Warning Heading
 
 Of all the things possible, this is what you came up with? I am disappointed in 
 your lack of ingenuity.
 
+\-- end: cbox.warning
+
+-- tf.h3: Output of above example:
+
+-- warning: Warning Heading
+
+Of all the things possible, this is what you came up with? I am disappointed in 
+your lack of ingenuity.
+
+-- end: warning
 
 
 
 
+
+-- pd.component: `cbox.tip` Basic usage example
+name: `-- cbox.tip:`
+
+Use below code snippet to use this admonitions component as cbox.
+
+-- cb.code: How to use
+lang: ftd
+
+\-- cbox.tip: Tip Heading
+
+Of all the things possible, this is what you came up with? I am disappointed in 
+your lack of ingenuity.
+
+\-- end: cbox.tip
+
+-- tf.h3: Output of above example:
 
 -- tip: Tip Heading
 
 Of all the things possible, this is what you came up with? I am disappointed in 
 your lack of ingenuity.
 
+-- end: tip
 
 
 
+
+
+-- pd.component: `cbox.danger` Basic usage example
+name: `-- cbox.danger:`
+
+Use below code snippet to use this admonitions component as cbox.
+
+-- cb.code: How to use
+lang: ftd
+
+\-- cbox.danger: Danger Heading
+
+Of all the things possible, this is what you came up with? I am disappointed in 
+your lack of ingenuity.
+
+\-- end: cbox.danger
+
+-- tf.h3: Output of above example:
 
 -- danger: Danger Heading
 
 Of all the things possible, this is what you came up with? I am disappointed in 
 your lack of ingenuity.
 
+-- end: danger
 
 
 
+
+
+-- pd.component: `cbox.info` Basic usage example
+name: `-- cbox.info:`
+
+Use below code snippet to use this admonitions component as cbox.
+
+-- cb.code: How to use
+lang: ftd
+
+\-- cbox.info: Info Heading
+
+Of all the things possible, this is what you came up with? I am disappointed in 
+your lack of ingenuity.
+
+\-- end: cbox.info
+
+-- tf.h3: Output of above example:
 
 -- info: Info Heading
 
 Of all the things possible, this is what you came up with? I am disappointed in 
 your lack of ingenuity.
 
+-- end: info
 
 
 
+
+
+-- pd.component: `cbox.tip` with emoji example
+name: `-- cbox.tip:`
+
+Use below code snippet to use this admonitions component as cbox.
+
+-- cb.code: How to use
+lang: ftd
+
+\-- cbox.tip: Security Warning
+emoji: ⚙️
+
+Of all the things possible, this is what you came up with? I am disappointed in 
+your lack of ingenuity.
+
+\-- end: cbox.tip
+
+-- tf.h3: Output of above example:
 
 -- tip: Security Warning
 emoji: ⚙️
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+Of all the things possible, this is what you came up with? I am disappointed in 
+your lack of ingenuity.
+
+-- end: tip
 
 
 
+
+
+-- pd.component: `cbox.text-1` Basic usage example
+name: `-- cbox.text-1:`
+
+Use below code snippet to use this admonitions component as cbox.
+
+-- cb.code: How to use
+lang: ftd
+
+\-- cbox.text-1: Textworthy Heading
+
+Of all the things possible, this is what you came up with? I am disappointed in 
+your lack of ingenuity.
+
+\-- end: cbox.text-1
+
+-- tf.h3: Output of above example:
 
 -- text-1: Textworthy Heading
 
 Of all the things possible, this is what you came up with? I am disappointed in 
-your lack of ingenuity. 
+your lack of ingenuity.
+
+-- end: text-1
 
 
 
 
 
+-- pd.component: `cbox.text-2` Basic usage example
+name: `-- cbox.text-2:`
+
+Use below code snippet to use this admonitions component as cbox.
+
+-- cb.code: How to use
+lang: ftd
+
+\-- cbox.text-2: Textworthy Heading
+
+Of all the things possible, this is what you came up with? I am disappointed in 
+your lack of ingenuity.
+
+\-- end: cbox.text-2
+
+-- tf.h3: Output of above example:
 
 -- text-2: Textworthy Heading
 
 Of all the things possible, this is what you came up with? I am disappointed in 
-your lack of ingenuity. 
+your lack of ingenuity.
+
+-- end: text-2
 
 
 
 
+-- pd.component: `cbox.text-3` Basic usage example
+name: `-- cbox.text-3:`
+
+Use below code snippet to use this admonitions component as cbox.
+
+-- cb.code: How to use
+lang: ftd
+
+\-- cbox.text-3: Textworthy Heading
+
+Of all the things possible, this is what you came up with? I am disappointed in 
+your lack of ingenuity.
+
+\-- end: cbox.text-3
+
+-- tf.h3: Output of above example:
 
 -- text-3: Textworthy Heading
 
 Of all the things possible, this is what you came up with? I am disappointed in 
-your lack of ingenuity. 
+your lack of ingenuity.
+
+-- end: text-3
 
 
 
 
+
+-- pd.component: `cbox.text-4` Basic usage example
+name: `-- cbox.text-4:`
+
+Use below code snippet to use this admonitions component as cbox.
+
+-- cb.code: How to use
+lang: ftd
+
+\-- cbox.text-4: Textworthy Heading
+
+Of all the things possible, this is what you came up with? I am disappointed in 
+your lack of ingenuity.
+
+\-- end: cbox.text-4
+
+-- tf.h3: Output of above example:
 
 -- text-4: Textworthy Heading
 
 Of all the things possible, this is what you came up with? I am disappointed in 
-your lack of ingenuity. 
+your lack of ingenuity.
+
+-- end: text-4
+
+-- end: ft.page
 
 
-
-
--- note: Security Warning
-emoji: 🔑
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-
--- cb.code: Example code:
-lang: ftd
-
-\-- note: You can nest stuff too!
-emoji: ⚡
-
--- end: note
-
-
-
-
--- end: ftd.column
-
-
--- ftd.column:
-width: fill-container
-background.solid: $inherited.colors.background.base
-align-self: center
-spacing.fixed.px: 20
-padding-horizontal.px: 20
-padding-vertical.px: 20
-
-
--- end: ftd.column
 
 
 

@@ -12,3 +12,9 @@ download-base-url: https://raw.githubusercontent.com/fifthtry/admonitions/main
 
 
 ;; -- fastn.auto-import: icon
+
+
+-- fastn.sitemap:
+
+
+# Home: index.html

@@ -322,12 +322,6 @@ optional body body:
 optional string emoji: 🗒️
 children container:
 
--- ftd.column: 
-width: fill-container
-
--- ftd.column:
-width: fill-container
-
 -- cbox:
 emoji: $note.emoji
 title: $note.title
@@ -339,9 +333,6 @@ wrapper: $note.container
 ;; optional ftd.ui icon: -- TODO FTD 0.3
 ;; icon: $note.icon -- TODO FTD 0.3
 
--- end: ftd.column
-
--- end: ftd.column
 
 -- end: note
 
@@ -360,12 +351,6 @@ optional body body:
 optional string emoji: ⚠️
 children container:
 
--- ftd.column: 
-width: fill-container
-
--- ftd.column:
-width: fill-container
-
 -- cbox:
 emoji: $warning.emoji
 title: $warning.title
@@ -376,10 +361,6 @@ background-solid: $inherited.colors.warning.base
 ;; optional ftd.ui icon: -- TODO FTD 0.3
 ;; icon: $warning.icon -- TODO FTD 0.3
 wrapper: $warning.container
-
--- end: ftd.column
-
--- end: ftd.column
 
 -- end: warning
 
@@ -398,12 +379,6 @@ optional body body:
 optional string emoji: 💡
 children container:
 
--- ftd.column: 
-width: fill-container
-
--- ftd.column:
-width: fill-container
-
 -- cbox:
 emoji: $tip.emoji
 title: $tip.title
@@ -414,10 +389,6 @@ background-solid: $inherited.colors.warning.base
 ;; optional ftd.ui icon: -- TODO FTD 0.3
 ;; icon: $tip.icon -- TODO FTD 0.3
 wrapper: $tip.container
-
--- end: ftd.column
-
--- end: ftd.column
 
 -- end: tip
 
@@ -437,12 +408,6 @@ optional body body:
 optional string emoji: ☢️
 children container:
 
--- ftd.column: 
-width: fill-container
-
--- ftd.column:
-width: fill-container
-
 -- cbox:
 emoji: $danger.emoji
 title: $danger.title
@@ -453,10 +418,6 @@ background-solid: $inherited.colors.error.base
 ;; optional ftd.ui icon: -- TODO FTD 0.3
 ;; icon: $icon -- TODO FTD 0.3
 wrapper: $danger.container
-
--- end: ftd.column
-
--- end: ftd.column
 
 -- end: danger
 
@@ -475,12 +436,6 @@ optional body body:
 optional string emoji: ℹ️
 children container:
 
--- ftd.column: 
-width: fill-container
-
--- ftd.column:
-width: fill-container
-
 -- cbox:
 emoji: $info.emoji
 title: $info.title
@@ -490,10 +445,6 @@ text-color: $inherited.colors.info.text
 ;; optional ftd.ui icon: -- TODO FTD 0.3
 ;; icon: $info.icon -- TODO FTD 0.3
 wrapper: $info.container
-
--- end: ftd.column
-
--- end: ftd.column
 
 -- end: info
 
@@ -524,7 +475,7 @@ padding-vertical.px: 16
 padding-right.px: 36
 border-radius.px: 4
 width if { ftd.device != "mobile" }: auto
-width if { ftd.device == "mobile" }: fill-container
+width: fill-container
 min-width.fixed.percent: 50
 margin-top.px: 16
 margin-bottom.px: 16
@@ -537,15 +488,12 @@ if: { icon != NULL }
 -- emoji: $cbox.emoji
 ;; if: { cbox.icon == NULL } -- TODO FTD 0.3
 
--- ftd.row:
-margin-left.px: 8
-
 -- ftd.text: $cbox.title
 role: $inherited.types.copy-regular
 color: $cbox.title-color
+margin-left.px: 8
 ;; style: bold -- TODO FTD 0.3
 
--- end: ftd.row
 
 -- end: ftd.row
 

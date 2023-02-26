@@ -385,7 +385,7 @@ title: $tip.title
 body: $tip.body
 title-color: $inherited.colors.success.text
 text-color: $inherited.colors.success.text
-background-solid: $inherited.colors.warning.base
+background-solid: $inherited.colors.success.base
 ;; optional ftd.ui icon: -- TODO FTD 0.3
 ;; icon: $tip.icon -- TODO FTD 0.3
 wrapper: $tip.container

@@ -602,7 +602,7 @@ margin-bottom.px: 16
 if: { text-2.caption != NULL }
 text: $text-2.caption
 role: $inherited.types.copy-regular
-color: $inherited.colors.background.step-1
+color: $inherited.colors.cta-primary.text
 width: fill-container
 background.solid: $inherited.colors.cta-primary.base
 padding-top.px: 10
@@ -621,7 +621,7 @@ padding-top.px: 10
 padding-left.px: 20
 padding-bottom.px: 10
 padding-right.px: 20
-background.solid: $inherited.colors.cta-tertiary.text
+background.solid: $inherited.colors.cta-primary.text
 border-top-left-radius.px if { text-2.caption == NULL }: 4
 border-top-right-radius.px if { text-2.caption == NULL }: 4
 border-bottom-left-radius.px: 8

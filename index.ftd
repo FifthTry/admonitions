@@ -304,6 +304,34 @@ your lack of ingenuity.
 
 -- end: text-4
 
+
+
+-- pd.component: `cbox.info` Basic usage example
+name: `-- cbox.info:`
+
+Use below code snippet to use this admonitions component as cbox.
+
+-- cb.rendered:
+
+-- cb.rendered.input:
+
+\-- cbox.info-tip: 
+
+Of all the things possible, this is what you came up with? I am disappointed in 
+your lack of ingenuity.
+
+-- cb.rendered.output:
+
+-- info-tip: 
+
+Of all the things possible, this is what you came up with? I am disappointed in 
+your lack of ingenuity. Of all the things possible, this is what you came up with? I am disappointed in 
+your lack of ingenuity.
+
+-- end: cb.rendered.output
+
+-- end: cb.rendered
+
 -- end: ft.page
 
 
@@ -552,7 +580,7 @@ margin-bottom.px: 16
 if: { text-1.caption != NULL }
 text: $text-1.caption
 role: $inherited.types.copy-regular
-color: $inherited.colors.background.step-1
+color: $inherited.colors.text.light
 width: fill-container
 background.solid: $inherited.colors.custom.three
 padding-top.px: 10
@@ -566,12 +594,12 @@ border-top-right-radius.px: 8
 text: $text-1.body
 width: fill-container
 role: $inherited.types.copy-regular
-color: $inherited.colors.background.base
+color: $inherited.colors.background.base.dark
 padding-top.px: 10
 padding-left.px: 20
 padding-bottom.px: 10
 padding-right.px: 20
-background.solid: $inherited.colors.info.base
+background.solid: $inherited.colors.info.base.light
 border-top-left-radius.px if { text-1.caption == NULL }: 4
 border-top-right-radius.px if { text-1.caption == NULL }: 4
 border-bottom-left-radius.px: 8
@@ -604,7 +632,7 @@ text: $text-2.caption
 role: $inherited.types.copy-regular
 color: $inherited.colors.cta-primary.text
 width: fill-container
-background.solid: $inherited.colors.cta-primary.base
+background.solid: $inherited.colors.cta-primary.hover
 padding-top.px: 10
 padding-bottom.px: 10
 padding-left.px: 20
@@ -616,12 +644,12 @@ border-top-right-radius.px: 8
 text: $text-2.body
 width: fill-container
 role: $inherited.types.copy-regular
-color: $inherited.colors.cta-primary.text
+color: $inherited.colors.text.dark
 padding-top.px: 10
 padding-left.px: 20
 padding-bottom.px: 10
 padding-right.px: 20
-background.solid: $inherited.colors.cta-primary.hover
+background.solid: $inherited.colors.background.step-1
 border-top-left-radius.px if { text-2.caption == NULL }: 4
 border-top-right-radius.px if { text-2.caption == NULL }: 4
 border-bottom-left-radius.px: 8
@@ -654,9 +682,9 @@ margin-bottom.px: 16
 if: { text-3.caption !=NULL }
 text: $text-3.caption
 role: $inherited.types.copy-regular
-color: $inherited.colors.background.step-1
+color: $inherited.colors.background.step-1.dark
 width: fill-container
-background.solid: $inherited.colors.custom.two
+background.solid: $inherited.colors.custom.two.dark
 padding-top.px: 10
 padding-bottom.px: 10
 padding-left.px: 20
@@ -668,7 +696,7 @@ border-top-right-radius.px: 8
 text: $text-3.body
 width: fill-container
 role: $inherited.types.copy-regular
-color: $inherited.colors.background.base
+color: $inherited.colors.text.dark
 padding-top.px: 10
 padding-left.px: 20
 padding-bottom.px: 10
@@ -735,3 +763,46 @@ overflow-x: auto
 -- end: ftd.column
 
 -- end: text-4
+
+
+
+
+
+
+
+-- component info-tip:
+body body:
+boolean $mouse-in: false
+
+-- ftd.column:
+width: fill-container
+border-width.px: 1
+border-color: $inherited.colors.info.border
+border-left-width.px: 5
+align-content: left
+padding.px: 10
+background.solid: $inherited.colors.custom.three.light
+
+-- ftd.column:
+anchor: parent
+left.px: 10
+top.px: 10
+
+-- ftd.text: INFO
+role: $inherited.types.fine-print
+color: $inherited.colors.text-strong.dark
+padding-vertical.px: 3
+padding-horizontal.px: 5
+background.solid: $inherited.colors.info.text
+
+-- end: ftd.column
+
+-- ftd.text: 
+text: $info-tip.body
+role: $inherited.types.fine-print
+color: $inherited.colors.text.light
+
+
+-- end: ftd.column
+
+-- end: info-tip

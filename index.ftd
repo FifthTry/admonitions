@@ -4,6 +4,7 @@
 -- import: fifthtry.github.io/package-doc/forest-theme as ft
 -- import: fifthtry.github.io/package-doc/code-block as cb
 -- import: fifthtry.github.io/roboto-font/assets as roboto
+-- import: fifthtry.github.io/package-doc/footer
 
 -- $ftd.font-copy: $roboto.fonts.Roboto
 -- $ftd.font-code: $roboto.fonts.Roboto
@@ -11,6 +12,13 @@
 
 
 -- ft.page:
+show-footer: true
+
+-- ft.page.footer:
+
+-- footer.fastn-footer:
+
+-- end: ft.page.footer
 
 
 -- pd.package: Admonitions
@@ -322,11 +330,10 @@ your lack of ingenuity.
 
 -- cb.rendered.output:
 
--- info-tip: 
+-- info-tip-1: 
 
-Of all the things possible, this is what you came up with? I am disappointed in 
-your lack of ingenuity. Of all the things possible, this is what you came up with? I am disappointed in 
-your lack of ingenuity.
+You can use meta query parameter with any of the READ API path if you wish to
+disable the metadata of the header.
 
 -- end: cb.rendered.output
 
@@ -806,3 +813,45 @@ color: $inherited.colors.text.light
 -- end: ftd.column
 
 -- end: info-tip
+
+
+
+
+
+
+
+
+
+
+-- component info-tip-1:
+body body:
+boolean $mouse-in: false
+
+-- ftd.column:
+width: fill-container
+border-width.px: 1
+border-color: $inherited.colors.info.border
+border-left-width.px: 5
+align-content: left
+padding.px: 10
+background.solid: $inherited.colors.background.base
+
+-- ftd.row:
+
+-- ftd.text: INFO
+role: $inherited.types.fine-print
+color: $inherited.colors.text-strong.dark
+padding-vertical.px: 3
+padding-horizontal.px: 5
+background.solid: $inherited.colors.info.text
+
+-- ftd.text: 
+text: $info-tip-1.body
+role: $inherited.types.fine-print
+color: $inherited.colors.text.light
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: info-tip-1

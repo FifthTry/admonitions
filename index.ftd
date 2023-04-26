@@ -10,7 +10,6 @@
 -- $ftd.font-code: $roboto.fonts.Roboto
 -- $ftd.font-display: $roboto.fonts.Roboto
 
-
 -- ft.page:
 show-footer: true
 site-name: Admonitions
@@ -20,7 +19,6 @@ site-name: Admonitions
 -- footer.fastn-footer:
 
 -- end: ft.page.footer
-
 
 -- pd.package: Admonitions
 name: fifthtry.github.io/admonitions
@@ -47,7 +45,7 @@ lang: ftd
 
 \-- cbox.note: Noteworthy Heading
 
-Of all the things possible, this is what you came up with? I am disappointed in 
+Of all the things possible, this is what you came up with? I am disappointed in
 your lack of ingenuity.
 
 \-- end: cbox.note
@@ -56,13 +54,10 @@ your lack of ingenuity.
 
 -- note: Noteworthy Heading
 
-Of all the things possible, this is what you came up with? I am disappointed in 
+Of all the things possible, this is what you came up with? I am disappointed in
 your lack of ingenuity.
 
 -- end: note
-
-
-
 
 -- pd.component: `cbox.warning` Basic usage example
 name: `-- cbox.warning:`
@@ -74,7 +69,7 @@ lang: ftd
 
 \-- cbox.warning: Warning Heading
 
-Of all the things possible, this is what you came up with? I am disappointed in 
+Of all the things possible, this is what you came up with? I am disappointed in
 your lack of ingenuity.
 
 \-- end: cbox.warning
@@ -83,14 +78,10 @@ your lack of ingenuity.
 
 -- warning: Warning Heading
 
-Of all the things possible, this is what you came up with? I am disappointed in 
+Of all the things possible, this is what you came up with? I am disappointed in
 your lack of ingenuity.
 
 -- end: warning
-
-
-
-
 
 -- pd.component: `cbox.tip` Basic usage example
 name: `-- cbox.tip:`
@@ -102,7 +93,7 @@ lang: ftd
 
 \-- cbox.tip: Tip Heading
 
-Of all the things possible, this is what you came up with? I am disappointed in 
+Of all the things possible, this is what you came up with? I am disappointed in
 your lack of ingenuity.
 
 \-- end: cbox.tip
@@ -111,14 +102,10 @@ your lack of ingenuity.
 
 -- tip: Tip Heading
 
-Of all the things possible, this is what you came up with? I am disappointed in 
+Of all the things possible, this is what you came up with? I am disappointed in
 your lack of ingenuity.
 
 -- end: tip
-
-
-
-
 
 -- pd.component: `cbox.danger` Basic usage example
 name: `-- cbox.danger:`
@@ -130,7 +117,7 @@ lang: ftd
 
 \-- cbox.danger: Danger Heading
 
-Of all the things possible, this is what you came up with? I am disappointed in 
+Of all the things possible, this is what you came up with? I am disappointed in
 your lack of ingenuity.
 
 \-- end: cbox.danger
@@ -139,14 +126,10 @@ your lack of ingenuity.
 
 -- danger: Danger Heading
 
-Of all the things possible, this is what you came up with? I am disappointed in 
+Of all the things possible, this is what you came up with? I am disappointed in
 your lack of ingenuity.
 
 -- end: danger
-
-
-
-
 
 -- pd.component: `cbox.info` Basic usage example
 name: `-- cbox.info:`
@@ -158,7 +141,7 @@ lang: ftd
 
 \-- cbox.info: Info Heading
 
-Of all the things possible, this is what you came up with? I am disappointed in 
+Of all the things possible, this is what you came up with? I am disappointed in
 your lack of ingenuity.
 
 \-- end: cbox.info
@@ -167,14 +150,10 @@ your lack of ingenuity.
 
 -- info: Info Heading
 
-Of all the things possible, this is what you came up with? I am disappointed in 
+Of all the things possible, this is what you came up with? I am disappointed in
 your lack of ingenuity.
 
 -- end: info
-
-
-
-
 
 -- pd.component: `cbox.tip` with emoji example
 name: `-- cbox.tip:`
@@ -187,7 +166,7 @@ lang: ftd
 \-- cbox.tip: Security Warning
 emoji: ⚙️
 
-Of all the things possible, this is what you came up with? I am disappointed in 
+Of all the things possible, this is what you came up with? I am disappointed in
 your lack of ingenuity.
 
 \-- end: cbox.tip
@@ -197,14 +176,10 @@ your lack of ingenuity.
 -- tip: Security Warning
 emoji: ⚙️
 
-Of all the things possible, this is what you came up with? I am disappointed in 
+Of all the things possible, this is what you came up with? I am disappointed in
 your lack of ingenuity.
 
 -- end: tip
-
-
-
-
 
 -- pd.component: `cbox.text-1` Basic usage example
 name: `-- cbox.text-1:`
@@ -216,7 +191,7 @@ lang: ftd
 
 \-- cbox.text-1: Textworthy Heading
 
-Of all the things possible, this is what you came up with? I am disappointed in 
+Of all the things possible, this is what you came up with? I am disappointed in
 your lack of ingenuity.
 
 \-- end: cbox.text-1
@@ -225,14 +200,10 @@ your lack of ingenuity.
 
 -- text-1: Textworthy Heading
 
-Of all the things possible, this is what you came up with? I am disappointed in 
+Of all the things possible, this is what you came up with? I am disappointed in
 your lack of ingenuity.
 
 -- end: text-1
-
-
-
-
 
 -- pd.component: `cbox.text-2` Basic usage example
 name: `-- cbox.text-2:`
@@ -244,7 +215,7 @@ lang: ftd
 
 \-- cbox.text-2: Textworthy Heading
 
-Of all the things possible, this is what you came up with? I am disappointed in 
+Of all the things possible, this is what you came up with? I am disappointed in
 your lack of ingenuity.
 
 \-- end: cbox.text-2
@@ -253,13 +224,10 @@ your lack of ingenuity.
 
 -- text-2: Textworthy Heading
 
-Of all the things possible, this is what you came up with? I am disappointed in 
+Of all the things possible, this is what you came up with? I am disappointed in
 your lack of ingenuity.
 
 -- end: text-2
-
-
-
 
 -- pd.component: `cbox.text-3` Basic usage example
 name: `-- cbox.text-3:`
@@ -271,7 +239,7 @@ lang: ftd
 
 \-- cbox.text-3: Textworthy Heading
 
-Of all the things possible, this is what you came up with? I am disappointed in 
+Of all the things possible, this is what you came up with? I am disappointed in
 your lack of ingenuity.
 
 \-- end: cbox.text-3
@@ -280,14 +248,10 @@ your lack of ingenuity.
 
 -- text-3: Textworthy Heading
 
-Of all the things possible, this is what you came up with? I am disappointed in 
+Of all the things possible, this is what you came up with? I am disappointed in
 your lack of ingenuity.
 
 -- end: text-3
-
-
-
-
 
 -- pd.component: `cbox.text-4` Basic usage example
 name: `-- cbox.text-4:`
@@ -299,7 +263,7 @@ lang: ftd
 
 \-- cbox.text-4: Textworthy Heading
 
-Of all the things possible, this is what you came up with? I am disappointed in 
+Of all the things possible, this is what you came up with? I am disappointed in
 your lack of ingenuity.
 
 \-- end: cbox.text-4
@@ -308,12 +272,10 @@ your lack of ingenuity.
 
 -- text-4: Textworthy Heading
 
-Of all the things possible, this is what you came up with? I am disappointed in 
+Of all the things possible, this is what you came up with? I am disappointed in
 your lack of ingenuity.
 
 -- end: text-4
-
-
 
 -- pd.component: `cbox.info` Basic usage example
 name: `-- cbox.info:`
@@ -326,7 +288,7 @@ Use below code snippet to use this admonitions component as cbox.
 
 \-- cbox.info-tip: 
 
-Of all the things possible, this is what you came up with? I am disappointed in 
+Of all the things possible, this is what you came up with? I am disappointed in
 your lack of ingenuity.
 
 -- cb.rendered.output:
@@ -351,7 +313,6 @@ disable the metadata of the header.
 
 
 
-
 -- component note:
 caption title:
 optional body body:
@@ -366,9 +327,6 @@ title-color: $inherited.colors.info.text
 text-color: $inherited.colors.info.text
 background-solid: $inherited.colors.info.base
 wrapper: $note.container
-;; optional ftd.ui icon: -- TODO FTD 0.3
-;; icon: $note.icon -- TODO FTD 0.3
-
 
 -- end: note
 
@@ -394,8 +352,6 @@ body: $warning.body
 title-color: $inherited.colors.warning.text
 text-color: $inherited.colors.warning.text
 background-solid: $inherited.colors.warning.base
-;; optional ftd.ui icon: -- TODO FTD 0.3
-;; icon: $warning.icon -- TODO FTD 0.3
 wrapper: $warning.container
 
 -- end: warning
@@ -422,12 +378,9 @@ body: $tip.body
 title-color: $inherited.colors.success.text
 text-color: $inherited.colors.success.text
 background-solid: $inherited.colors.success.base
-;; optional ftd.ui icon: -- TODO FTD 0.3
-;; icon: $tip.icon -- TODO FTD 0.3
 wrapper: $tip.container
 
 -- end: tip
-
 
 
 
@@ -451,8 +404,6 @@ body: $danger.body
 title-color: $inherited.colors.error.text
 text-color: $inherited.colors.error.text
 background-solid: $inherited.colors.error.base
-;; optional ftd.ui icon: -- TODO FTD 0.3
-;; icon: $icon -- TODO FTD 0.3
 wrapper: $danger.container
 
 -- end: danger
@@ -478,8 +429,6 @@ title: $info.title
 body: $info.body
 title-color: $inherited.colors.info.text
 text-color: $inherited.colors.info.text
-;; optional ftd.ui icon: -- TODO FTD 0.3
-;; icon: $info.icon -- TODO FTD 0.3
 wrapper: $info.container
 
 -- end: info
@@ -501,7 +450,6 @@ ftd.color text-color: $inherited.colors.info.text
 ftd.color background-solid: $inherited.colors.info.base
 optional string emoji:
 children wrapper:
-;; optional ftd.ui icon: -- TODO FTD 0.3
 
 -- ftd.column:
 color: $cbox.title-color
@@ -518,27 +466,23 @@ margin-bottom.px: 16
 
 -- ftd.row:
 
-/--- icon: -- TODO FTD 0.3
-if: { icon != NULL }
-
 -- emoji: $cbox.emoji
-;; if: { cbox.icon == NULL } -- TODO FTD 0.3
 
 -- ftd.text: $cbox.title
 role: $inherited.types.copy-regular
 color: $cbox.title-color
 margin-left.px: 8
-;; style: bold -- TODO FTD 0.3
-
+style: bold
 
 -- end: ftd.row
 
 -- ftd.text:
 if: { cbox.body != NULL }
-text: $cbox.body
 role: $inherited.types.copy-regular
 color: $cbox.text-color
 padding-top.px: 8
+
+$cbox.body
 
 -- ftd.column:
 width: fill-container
@@ -557,12 +501,14 @@ children: $cbox.wrapper
 
 
 
+
+
 -- component emoji:
 optional caption title:
 
 -- ftd.text: $emoji.title
 role: $inherited.types.copy-regular
-;; style: bold -- TODO FTD 0.3
+style: bold
 
 -- end: emoji
 
@@ -581,8 +527,7 @@ body body:
 
 -- ftd.column:
 width: fill-container
-margin-top.px: 16
-margin-bottom.px: 16
+margin-vertical.px: 16
 
 -- ftd.text:
 if: { text-1.caption != NULL }
@@ -591,22 +536,17 @@ role: $inherited.types.copy-regular
 color: $inherited.colors.text.light
 width: fill-container
 background.solid: $inherited.colors.custom.three
-padding-top.px: 10
-padding-bottom.px: 10
-padding-left.px: 20
-padding-right.px: 20
+padding-vertical.px: 10
+padding-horizontal.px: 20
 border-top-left-radius.px: 8
 border-top-right-radius.px: 8
 
 -- ftd.text:
-text: $text-1.body
 width: fill-container
 role: $inherited.types.copy-regular
 color: $inherited.colors.background.base.dark
-padding-top.px: 10
-padding-left.px: 20
-padding-bottom.px: 10
-padding-right.px: 20
+padding-vertical.px: 10
+padding-horizontal.px: 20
 background.solid: $inherited.colors.info.base.light
 border-top-left-radius.px if { text-1.caption == NULL }: 4
 border-top-right-radius.px if { text-1.caption == NULL }: 4
@@ -614,9 +554,13 @@ border-bottom-left-radius.px: 8
 border-bottom-right-radius.px: 8
 overflow-x: auto
 
+$text-1.body
+
 -- end: ftd.column
 
 -- end: text-1
+
+
 
 
 
@@ -630,9 +574,7 @@ optional caption caption:
 body body:
 
 -- ftd.column:
-width: fill-container
-margin-top.px: 16
-margin-bottom.px: 16
+margin-vertical.px: 16
 
 -- ftd.text:
 if: { text-2.caption != NULL }
@@ -641,28 +583,25 @@ role: $inherited.types.copy-regular
 color: $inherited.colors.cta-primary.text
 width: fill-container
 background.solid: $inherited.colors.cta-primary.hover
-padding-top.px: 10
-padding-bottom.px: 10
-padding-left.px: 20
-padding-right.px: 20
+padding-vertical.px: 10
+padding-horizontal.px: 20
 border-top-left-radius.px: 8
 border-top-right-radius.px: 8
 
 -- ftd.text:
-text: $text-2.body
 width: fill-container
 role: $inherited.types.copy-regular
 color: $inherited.colors.text.dark
-padding-top.px: 10
-padding-left.px: 20
-padding-bottom.px: 10
-padding-right.px: 20
+padding-vertical.px: 10
+padding-horizontal.px: 20
 background.solid: $inherited.colors.background.step-1
 border-top-left-radius.px if { text-2.caption == NULL }: 4
 border-top-right-radius.px if { text-2.caption == NULL }: 4
 border-bottom-left-radius.px: 8
 border-bottom-right-radius.px: 8
 overflow-x: auto
+
+$text-2.body
 
 -- end: ftd.column
 
@@ -683,8 +622,7 @@ body body:
 
 -- ftd.column:
 width: fill-container
-margin-top.px: 16
-margin-bottom.px: 16
+margin-vertical.px: 16
 
 -- ftd.text:
 if: { text-3.caption !=NULL }
@@ -693,28 +631,25 @@ role: $inherited.types.copy-regular
 color: $inherited.colors.background.step-1.dark
 width: fill-container
 background.solid: $inherited.colors.custom.two.dark
-padding-top.px: 10
-padding-bottom.px: 10
-padding-left.px: 20
-padding-right.px: 20
+padding-vertical.px: 10
+padding-horizontal.px: 20
 border-top-left-radius.px: 8
 border-top-right-radius.px: 8
 
 -- ftd.text:
-text: $text-3.body
 width: fill-container
 role: $inherited.types.copy-regular
 color: $inherited.colors.text.dark
-padding-top.px: 10
-padding-left.px: 20
-padding-bottom.px: 10
-padding-right.px: 20
+padding-vertical.px: 10
+padding-horizontal.px: 20
 background.solid: $inherited.colors.warning.base
 border-top-left-radius.px if { text-3.caption == NULL }: 4
 border-top-right-radius.px if { text-3.caption == NULL }: 4
 border-bottom-left-radius.px: 8
 border-bottom-right-radius.px: 8
 overflow-x: auto
+
+$text-3.body
 
 -- end: ftd.column
 
@@ -735,8 +670,7 @@ body body:
 
 -- ftd.column:
 width: fill-container
-margin-top.px: 16
-margin-bottom.px: 16
+margin-vertical.px: 16
 
 -- ftd.text:
 if: { text-4.caption != NULL }
@@ -745,22 +679,17 @@ role: $inherited.types.copy-regular
 color: $inherited.colors.text-strong
 width: fill-container
 background.solid: $inherited.colors.background.step-2
-padding-top.px: 10
-padding-bottom.px: 10
-padding-left.px: 20
-padding-right.px: 20
+padding-vertical.px: 10
+padding-horizontal.px: 20
 border-top-left-radius.px: 8
 border-top-right-radius.px: 8
 
 -- ftd.text:
-text: $text-4.body
 width: fill-container
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
-padding-top.px: 10
-padding-left.px: 20
-padding-bottom.px: 10
-padding-right.px: 20
+padding-vertical.px: 10
+padding-horizontal.px: 20
 background.solid: $inherited.colors.background.step-1
 border-top-left-radius.px if { text-4.caption == NULL }: 4
 border-top-right-radius.px if { text-4.caption == NULL }: 4
@@ -768,9 +697,14 @@ border-bottom-left-radius.px: 8
 border-bottom-right-radius.px: 8
 overflow-x: auto
 
+$text-4.body
+
 -- end: ftd.column
 
 -- end: text-4
+
+
+
 
 
 
@@ -805,11 +739,11 @@ background.solid: $inherited.colors.info.text
 
 -- end: ftd.column
 
--- ftd.text: 
-text: $info-tip.body
+-- ftd.text:
 role: $inherited.types.fine-print
 color: $inherited.colors.text.light
 
+$info-tip.body
 
 -- end: ftd.column
 
@@ -846,10 +780,11 @@ padding-vertical.px: 3
 padding-horizontal.px: 5
 background.solid: $inherited.colors.info.text
 
--- ftd.text: 
-text: $info-tip-1.body
+-- ftd.text:
 role: $inherited.types.fine-print
 color: $inherited.colors.text.light
+
+$info-tip-1.body
 
 -- end: ftd.row
 
